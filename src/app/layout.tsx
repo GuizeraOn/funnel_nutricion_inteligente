@@ -64,9 +64,14 @@ export const metadata: Metadata = {
       "Crea tu plan de alimentación personalizado basado en tus preferencias, macros y objetivos.",
     images: ["https://i.postimg.cc/x86zt0Ln/Nutricion.webp"],
   },
-  manifest: undefined,
+  manifest: "/site.webmanifest",
   icons: {
-    icon: "/favicon.ico",
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon-96x96.png", sizes: "96x96", type: "image/png" },
+    ],
+    apple: "/apple-touch-icon.png",
   },
   robots: {
     index: true,
