@@ -71,7 +71,6 @@ const MEALS = [
         name: "Almuerzo",
         time: "13:30",
         kcal: 594,
-        tip: "¡Puedes descargarlo en PDF! ✨",
         options: [
             {
                 label: "Opción 1",
@@ -190,13 +189,6 @@ function MealCard({ meal }: { meal: (typeof MEALS)[0] }) {
                     {meal.kcal} <span className="text-sm font-medium text-gray-400">kcal</span>
                 </span>
             </div>
-
-            {/* Tip banner */}
-            {meal.tip && (
-                <div className="mx-4 mb-3 bg-emerald-50 border border-emerald-100 text-emerald-700 text-xs font-medium px-3 py-2 rounded-lg">
-                    {meal.tip}
-                </div>
-            )}
 
             {/* Option tabs */}
             <div className="mx-4 mb-4 bg-gray-100 rounded-xl p-1 grid grid-cols-3 gap-1">
