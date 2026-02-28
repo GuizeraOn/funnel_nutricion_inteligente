@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { signInWithPopup, createUserWithEmailAndPassword } from "firebase/auth";
 import { auth, db, googleProvider } from "@/lib/firebase";
 import { APP_COPY } from "@/lib/constants";
@@ -8,7 +8,7 @@ import { doc, setDoc } from "firebase/firestore";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { Mail, Lock, Loader2, ArrowRight } from "lucide-react";
-import PhoneInput from 'react-phone-number-input'
+import PhoneInput, { type Country } from 'react-phone-number-input'
 import 'react-phone-number-input/style.css'
 import { cn } from "@/lib/utils";
 
@@ -23,6 +23,18 @@ export default function SignupPage() {
     const [status, setStatus] = useState(""); // Feedback visual do progresso
     const [error, setError] = useState("");
     const [termsAccepted, setTermsAccepted] = useState(false);
+    const [detectedCountry, setDetectedCountry] = useState<Country>("CL");
+
+    useEffect(() => {
+        fetch("https://ipapi.co/json/")
+            .then(res => res.json())
+            .then(data => {
+                if (data?.country_code) {
+                    setDetectedCountry(data.country_code as Country);
+                }
+            })
+            .catch(() => { /* fallback to CL */ });
+    }, []);
 
     const handleGoogleSignup = async () => {
         if (!termsAccepted) {
@@ -228,7 +240,7 @@ export default function SignupPage() {
                                     placeholder="Teléfono (Whatsapp)"
                                     value={phone}
                                     onChange={setPhone}
-                                    defaultCountry="CL"
+                                    defaultCountry={detectedCountry}
                                     className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus-within:ring-2 focus-within:ring-green-500/20 focus-within:border-green-500 focus-within:bg-white transition-all"
                                     numberInputProps={{
                                         className: "bg-transparent border-none focus:outline-none w-full text-gray-900 placeholder:text-gray-400 ml-2"
