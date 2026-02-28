@@ -227,7 +227,7 @@ export const BREAKFAST_ITEMS = [
     { id: "omelette", emoji: "🍳", name: "Omelette" },
     { id: "manzana", emoji: "🍎", name: "Manzana" },
     { id: "banana", emoji: "🍌", name: "Banana" },
-    { id: "papaya", emoji: "🥭", name: "Papaya" },
+    { id: "papaya", emoji: "🍈", name: "Papaya" },
     { id: "cafe_leche", emoji: "☕", name: "Café con Leche" },
     { id: "cafe", emoji: "☕", name: "Café Negro" },
     { id: "yogur", emoji: "🥛", name: "Yogur" },
@@ -235,10 +235,10 @@ export const BREAKFAST_ITEMS = [
 
 export const LUNCH_ITEMS = [
     { id: "arroz", emoji: "🍚", name: "Arroz" },
-    { id: "frijoles", emoji: "🫘", name: "Frijoles / Caraotas" },
+    { id: "frijoles", emoji: "🍲", name: "Frijoles / Caraotas" },
     { id: "polenta", emoji: "🌽", name: "Polenta / Maíz" },
     { id: "pastas", emoji: "🍝", name: "Pastas" },
-    { id: "camote", emoji: "🍠", name: "Camote / Batata" },
+    { id: "camote", emoji: "🥔", name: "Camote / Batata" },
     { id: "yuca", emoji: "🥔", name: "Yuca / Mandioca" },
     { id: "name", emoji: "🥔", name: "Ñame / Papa" },
     { id: "papa", emoji: "🥔", name: "Papa Cocida" },
@@ -250,7 +250,7 @@ export const LUNCH_ITEMS = [
     { id: "carne_molida", emoji: "🥩", name: "Carne Molida" },
     { id: "pescado", emoji: "🐟", name: "Pescado" },
     { id: "ensalada_mixta", emoji: "🍅", name: "Ensalada Mixta" },
-    { id: "ensalada_lechuga", emoji: "🥬", name: "Ensalada Verde" },
+    { id: "ensalada_lechuga", emoji: "�", name: "Ensalada Verde" },
     { id: "ensalada_veg", emoji: "🥗", name: "Vegetales Cocidos" },
 ];
 
@@ -259,7 +259,7 @@ export const MORNING_SNACK_ITEMS = [
     { id: "platano", emoji: "🍌", name: "Plátano" },
     { id: "naranja", emoji: "🍊", name: "Naranja" },
     { id: "pina", emoji: "🍍", name: "Piña" },
-    { id: "papaya_snack", emoji: "🥭", name: "Papaya" },
+    { id: "papaya_snack", emoji: "🍈", name: "Papaya" },
     { id: "fresa", emoji: "🍓", name: "Fresa" },
     { id: "sandia", emoji: "🍉", name: "Sandía" },
     { id: "melon", emoji: "🍈", name: "Melón" },
