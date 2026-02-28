@@ -1,7 +1,8 @@
 
 export const APP_COPY = {
     header: {
-        logo: "Logo",
+        logo: "https://i.postimg.cc/x86zt0Ln/Nutricion.webp",
+        logoVertical: "https://i.postimg.cc/9QQq6kw5/principal.png",
         menu: ["Inicio", "Dietas", "Perfil"],
         logout: "Cerrar sesión",
     },
@@ -72,6 +73,11 @@ export const APP_COPY = {
                 instruction: "Arma tu cena seleccionando alimentos de cada categoría:",
                 details: "(Mismos ítems que el almuerzo)",
             },
+            morningSnack: {
+                title: "🍎 Snack de la mañana",
+                instruction: "Elige un alimento para tu snack de la mañana",
+                optional: true,
+            },
             selectionCount: "seleccionado(s)",
         },
         routine: {
@@ -107,7 +113,7 @@ export const APP_COPY = {
             badge: "Oferta / CTA",
             title: "Dieta Personalizada",
             subtitle: "Nutrición accesible para ti",
-            priceText: "Dieta personalizada por menos de [Moneda Local] (aprox. $2 USD)",
+            priceText: "Dieta personalizada por menos de $9",
             priceSub: "Por un precio accesible",
             features: [
                 "Plan alimenticio completo",
@@ -133,7 +139,7 @@ export const APP_COPY = {
                 id: "basic",
                 name: "Plan 1: Básico",
                 title: "Plan Definición Muscular",
-                price: "9.99",
+                price: "8.99",
                 currency: "$",
                 features: [
                     "Plan personalizado",
@@ -141,14 +147,16 @@ export const APP_COPY = {
                     "Monitoreo de progreso", // "Monitorea tu" -> "Monitoreo de" (Noun phrase)
                     "Soporte por correo",
                 ],
+                image: "https://i.postimg.cc/8PhSTnG8/1-img.webp",
                 cta: "Elegir Plan",
+                checkoutUrl: "https://pay.hotmart.com/R104680264F?off=piayqz05&checkoutMode=10",
             },
             {
                 id: "bestseller",
                 name: "Plan 2: Best Seller",
                 label: "⭐ Más vendido",
                 title: "Tu Dieta + Entrenamiento",
-                price: "14.99",
+                price: "10.99",
                 currency: "$",
                 features: [
                     "Plan personalizado",
@@ -158,7 +166,9 @@ export const APP_COPY = {
                     "Soporte vía WhatsApp",
                     "Guías de suplementación",
                 ],
+                image: "https://i.postimg.cc/bNXPcf78/2-img.webp",
                 cta: "Elegir Plan",
+                checkoutUrl: "https://pay.hotmart.com/R104680264F?off=3eze68u0&checkoutMode=10",
                 highlight: true,
             },
             {
@@ -166,7 +176,7 @@ export const APP_COPY = {
                 name: "Plan 3: Recomendado",
                 label: "🔥 Recomendado",
                 title: "Plan Completo",
-                price: "15.99",
+                price: "12.99",
                 currency: "$",
                 features: [
                     "Libertad para modificar tu dieta",
@@ -176,24 +186,29 @@ export const APP_COPY = {
                     "Lista de sustituciones",
                     "Guía de Whey y Creatina",
                 ],
+                image: "https://i.postimg.cc/PrmjdFHn/3-img.webp",
                 cta: "Elegir Plan",
+                checkoutUrl: "https://pay.hotmart.com/R104680264F?off=gx9kplxy&checkoutMode=10",
                 highlight: true,
             },
             {
                 id: "premium",
                 name: "Plan 4: Premium",
-                title: "Completo",
-                subtitle: "Consulta con Nutricionista",
-                price: "29.99",
+                title: "Protocolo Extreme",
+                price: "15.99",
                 currency: "$",
                 features: [
                     "Todo lo de los planes anteriores",
-                    "Seguimiento nutricional",
-                    "Entrenamientos personalizados",
-                    "Asesoría completa",
-                    "Soporte prioritario",
+                    "Protocolo Anti-Efecto Rebote",
+                    "Guia de Preparación de Comidas",
+                    "Calculadora de Macros VIP",
+                    "Acceso de por vida a las actualizaciones",
+                    "Guía de Definición Extrema",
+                    "El Manual Maestro de la Hipertrofia",
                 ],
+                image: "https://i.postimg.cc/15xSh1km/4-img.webp",
                 cta: "Elegir Plan",
+                checkoutUrl: "https://pay.hotmart.com/R104680264F?off=tb2o5f42&checkoutMode=10",
             },
         ],
     },
@@ -237,4 +252,19 @@ export const LUNCH_ITEMS = [
     { id: "ensalada_mixta", emoji: "🍅", name: "Ensalada Mixta" },
     { id: "ensalada_lechuga", emoji: "🥬", name: "Ensalada Verde" },
     { id: "ensalada_veg", emoji: "🥗", name: "Vegetales Cocidos" },
+];
+
+export const MORNING_SNACK_ITEMS = [
+    { id: "manzana_snack", emoji: "🍎", name: "Manzana" },
+    { id: "platano", emoji: "🍌", name: "Plátano" },
+    { id: "naranja", emoji: "🍊", name: "Naranja" },
+    { id: "pina", emoji: "🍍", name: "Piña" },
+    { id: "papaya_snack", emoji: "🥭", name: "Papaya" },
+    { id: "fresa", emoji: "🍓", name: "Fresa" },
+    { id: "sandia", emoji: "🍉", name: "Sandía" },
+    { id: "melon", emoji: "🍈", name: "Melón" },
+    { id: "whey", emoji: "🥛", name: "Whey Protein (Proteína)" },
+    { id: "galleta_tapioca", emoji: "🍪", name: "Galletas de tapioca" },
+    { id: "galleta_soda", emoji: "🍪", name: "Galletas de agua y sal (o galletas soda)" },
+    { id: "galleta_arroz", emoji: "🍪", name: "Galletas de arroz" },
 ];
